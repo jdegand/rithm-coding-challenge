@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+     integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+     crossorigin=""></script>
+    <title>Leaflet Result</title>
+</head>
+<body>
+    <a href="/">Home</a>
+    <br/>
+    <br/>
+    <!-- object shape I used 
+
+    [{"_id":"637bdac0711b591ab7c9672d",
+    "geometry":{"type":"Point","coordinates":[-122.419416,37.774929]},
+    "properties":{"user_id":1,"user_name":"Taylor Swift","user_age":32,"user_fav_color":"red","last_location":"San Francisco"}
+    }]
+    -->
+
+    <% if(names.length === 0) { %>
+        <div id="none">No Results</div>
+    <% } %>
+
+    <div id="map"></div>
+    <!--might have to return different leaflet maps depending on origin and dist-->
+    <% if (names && locations && start) { %>
+    <script>  
+
+        // better to convert to new variables than add the ejs syntax inside functions 
+
+        let namesArr = '<%= names %>'.split(',');
+
+        let arr = [<%= locations %>];
+
+        let y = [<%= start %>];
+
+        let rad = <%= radius %>;
+
+        let r = [y[1], y[0]];
+
+        let sorted = arr.reduce(function(accumulator, currentValue, currentIndex, array) {
+            if (currentIndex % 2 === 0)
+            accumulator.push(array.slice(currentIndex, currentIndex + 2));
+            return accumulator;
+        }, [])
+
+        document.addEventListener('DOMContentLoaded', ()=> {
+
+            document.getElementById('map').style.width = '100%';
+            document.getElementById('map').style.height = '500px';
+        
+            const map = L.map('map', {center: r, zoom: 10}) // had problems with ejs variable & removed setView - could try to switch back 
+
+            if(rad) {
+                L.circle(r, rad).addTo(map);
+            }
+            
+            L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            }).addTo(map);
+
+            if(sorted) {
+
+            for (var i = 0; i < sorted.length; i++) {
+                // have to reverse lat and long
+                marker = new L.marker([sorted[i][1], sorted[i][0]])
+                    .bindPopup(namesArr[i])
+                    .addTo(map);
+                }
+            }
+        })
+    </script>
+    <% } %>
+</body>
+</html>
+
+<!--
+
+    const x = '<%= names[0] %>'
+
+    L.marker([37.774929, -122.419416]).addTo(map)
+        .bindPopup(`${x}`)
+        .openPopup();
+
+    for (var i = 0; i < sorted.length; i++) {
+        marker = new L.marker(sorted[i])
+            .bindPopup('name') // names[i]
+            .addTo(map);
+    }
+
+
+    for (var i = 0; i < locations.length; i++) {
+        marker = new L.marker([ -118.340361, 34.062264 ])
+            .bindPopup('Whatever') // names[i]
+            .addTo(map);
+    }
+-->

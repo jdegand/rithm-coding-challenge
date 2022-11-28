@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <div>
+      <form name="form" action="/users" method="GET">
+        <table>
+            <tr>
+            <td>Favorite Color</td>
+            <td><input type="text" name="fav_color"></td>
+            </tr>
+            <tr>
+            <td>Distance (Meters)</td>
+            <td><input type="number" name="dist"></td>
+            </tr>
+            <tr>
+              <td>Origin</td>
+              <td><input type="text" name="origin"></td>
+            </tr>
+            <tr>
+              <td>Minimum Age</td>
+              <td><input type="number" name="min_age"></td>
+            </tr>
+            <tr>
+              <td>Maximum Age</td>
+              <td><input type="number" name="max_age"></td>
+            </tr>
+            <tr>
+            <td><input type="submit" value="Search"></td>
+            </tr>
+        </table>
+        </form>
+    </div>
+  </body>
+</html>
