@@ -134,8 +134,8 @@ $ npm start
 - Had to search on github to find something that would work when testing the application 
 - Tests are similar to [this](https://github.com/bflaven/node-countries-mysql-crud-ejs)
 - Instead of using cheerio, could have used a jquery plugin
-- I am sure there are better ways to do this but I don't want to devote a ton of time to this 
-- If I used react, I would have used cypress
+- I am sure there are better ways to test this but I don't want to devote a ton of time to this 
+- If I had used react, I would have used cypress
 
 ## Screenshots 
 
@@ -148,53 +148,53 @@ $ npm start
 ## Useful Resources
 
 - [Convert CSV](https://www.convertcsv.com/csv-to-geojson.htm)
-- [Mongo](https://www.mongodb.com/blog/post/quick-start-nodejs-mongodb-how-to-get-connected-to-your-database)
-- [Mongo](https://www.mongodb.com/developer/products/mongodb/mongoimport-guide/)
-- [Mongo](https://www.mongodb.com/docs/atlas/import/mongoimport/)
+- [Mongo](https://www.mongodb.com/blog/post/quick-start-nodejs-mongodb-how-to-get-connected-to-your-database) - mongo connect to your database
+- [Mongo](https://www.mongodb.com/developer/products/mongodb/mongoimport-guide/) - mongoimport guide
+- [Mongo](https://www.mongodb.com/docs/atlas/import/mongoimport/) - mongoimport
 - [YouTube](https://www.youtube.com/watch?v=Z5oeSHPyqzs) - import csv into mongo using node
 - [YouTube](https://www.youtube.com/watch?v=fkGafwD-b1s) - export json into mongo atlas
-- [Stack Overflow](https://stackoverflow.com/questions/49092856/importing-your-data-into-mongodb-atlas)
-- [Isotropic](https://isotropic.co/how-to-implement-pagination-in-mongodb/)
-- [Stack Overflow](https://stackoverflow.com/questions/59058240/ignore-a-parameter-in-a-query-if-it-arrives-null-in-mongodb)
-- [YouTube](https://www.youtube.com/watch?v=lHmQXaXv2nA)
-- [Stack Overflow](https://stackoverflow.com/questions/36374842/how-can-i-connect-to-mongodb-using-express-without-mongoose)
-- [Stack Overflow](https://stackoverflow.com/questions/71899948/express-and-mongodb-without-mongoose)
-- [Rithm School](https://www.rithmschool.com/courses/intermediate-node-express/api-tests-with-jest)
-- [Stack Overflow](https://stackoverflow.com/questions/60020381/mongodb-atlas-bad-auth-authentication-failed-code-8000)
-- [Github](https://github.com/fChristenson/sans-mongoose)
-- [Dev.to](https://dev.to/kamalhossain/mongodb-without-mongoose-1k69)
-- [Github](https://github.com/kamal-hossain/blog-4-mongodb-without-mongoose)
-- [Github](https://github.com/mongodb-developer/nodejs-quickstart)
-- [Mongo](https://www.mongodb.com/developer/languages/javascript/node-crud-tutorial/?_ga=2.140780722.1489775898.1669073769-214589954.1669073769)
-- [DZone](https://dzone.com/articles/crud-operations-on-mongodb-thru-nodejs)
-- [Stack Overflow](https://stackoverflow.com/questions/70581891/get-mongodb-collection-by-name-in-node-js)
-- [Mongo](https://www.mongodb.com/languages/express-mongodb-rest-api-tutorial)
-- [Github](https://github.com/mongodb-developer/mern-stack-example)
-- [Stack Overflow](https://stackoverflow.com/questions/19579791/optional-parameters-for-mongodb-query)
-- [Leaflet](https://leafletjs.com/examples/quick-start/)
-- [LaraCasts](https://laracasts.com/discuss/channels/code-review/leaflet-js-map-not-showing-fully-on-page-load)
-- [Stack Overflow](https://stackoverflow.com/questions/11289793/accessing-ejs-variable-in-javascript-logic)
-- [YouTube](https://www.youtube.com/watch?v=Ookp481CCjI)
-- [Stack Overflow](https://stackoverflow.com/questions/19579791/optional-parameters-for-mongodb-query)
-- [Stack Overflow](https://stackoverflow.com/questions/43167417/calculate-distance-between-two-points-in-leaflet)
-- [Stack Overflow](https://stackoverflow.com/questions/42968243/how-to-add-multiple-markers-in-leaflet-js)
-- [Stack Overflow](https://stackoverflow.com/questions/46539106/accessing-passed-ejs-variable-in-javascript-file)
-- [Stack Overflow](https://stackoverflow.com/questions/7273668/how-to-split-a-long-array-into-smaller-arrays-with-javascript)
-- [Stack Overflow](https://stackoverflow.com/questions/49491452/map-an-array-by-every-two-elements)
-- [Stack Overflow](https://stackoverflow.com/questions/22952044/loop-through-json-in-ejs)
-- [Stack Overflow](https://stackoverflow.com/questions/46821081/leaflet-throwing-uncaught-typeerror-cannot-read-property-lat-of-undefined-w)
+- [Stack Overflow](https://stackoverflow.com/questions/49092856/importing-your-data-into-mongodb-atlas) - import data into mongo atlas
+- [Isotropic](https://isotropic.co/how-to-implement-pagination-in-mongodb/) - pagination in mongo
+- [Stack Overflow](https://stackoverflow.com/questions/59058240/ignore-a-parameter-in-a-query-if-it-arrives-null-in-mongodb) - ignore a parameter in a query if it is null
+- [YouTube](https://www.youtube.com/watch?v=lHmQXaXv2nA) - 56. What is GeoJson Data. Adding Geo Spatial Data to store the places in the document - MongoDB
+- [Stack Overflow](https://stackoverflow.com/questions/36374842/how-can-i-connect-to-mongodb-using-express-without-mongoose) - connect to mongo without mongoose
+- [Stack Overflow](https://stackoverflow.com/questions/71899948/express-and-mongodb-without-mongoose) - express and mongo without mongoose
+- [Rithm School](https://www.rithmschool.com/courses/intermediate-node-express/api-tests-with-jest) - api tests with jest
+- [Stack Overflow](https://stackoverflow.com/questions/60020381/mongodb-atlas-bad-auth-authentication-failed-code-8000) - bad authentication atlas
+- [Github](https://github.com/fChristenson/sans-mongoose) - sans mongoose
+- [Dev.to](https://dev.to/kamalhossain/mongodb-without-mongoose-1k69) - mongo without mongoose
+- [Github](https://github.com/kamal-hossain/blog-4-mongodb-without-mongoose) - mongo without mongoose
+- [Github](https://github.com/mongodb-developer/nodejs-quickstart) - mongo node quickstart
+- [Mongo](https://www.mongodb.com/developer/languages/javascript/node-crud-tutorial/?_ga=2.140780722.1489775898.1669073769-214589954.1669073769) - mongo crud tutorial
+- [DZone](https://dzone.com/articles/crud-operations-on-mongodb-thru-nodejs) - crud operations on mongo
+- [Stack Overflow](https://stackoverflow.com/questions/70581891/get-mongodb-collection-by-name-in-node-js) - get mongo collection by name in node
+- [Mongo](https://www.mongodb.com/languages/express-mongodb-rest-api-tutorial) - express mongo rest api tutorial
+- [Github](https://github.com/mongodb-developer/mern-stack-example) - mern stack example mongo
+- [Stack Overflow](https://stackoverflow.com/questions/19579791/optional-parameters-for-mongodb-query) - optional parameters for mongo query
+- [Leaflet](https://leafletjs.com/examples/quick-start/) - leaflet quick start
+- [LaraCasts](https://laracasts.com/discuss/channels/code-review/leaflet-js-map-not-showing-fully-on-page-load) - leaflet not showing fully on page load
+- [Stack Overflow](https://stackoverflow.com/questions/11289793/accessing-ejs-variable-in-javascript-logic) - access ejs variable in js logic
+- [YouTube](https://www.youtube.com/watch?v=Ookp481CCjI) - 16 MongoDB Queries - Fields Filtering
+- [Stack Overflow](https://stackoverflow.com/questions/19579791/optional-parameters-for-mongodb-query) - optional parameters in mongo query
+- [Stack Overflow](https://stackoverflow.com/questions/43167417/calculate-distance-between-two-points-in-leaflet) - calculate distance between 2 points in leaflet
+- [Stack Overflow](https://stackoverflow.com/questions/42968243/how-to-add-multiple-markers-in-leaflet-js) - multiple markers in leaflet
+- [Stack Overflow](https://stackoverflow.com/questions/46539106/accessing-passed-ejs-variable-in-javascript-file) - access passed ejs variable
+- [Stack Overflow](https://stackoverflow.com/questions/7273668/how-to-split-a-long-array-into-smaller-arrays-with-javascript) - split long array to smaller arrays
+- [Stack Overflow](https://stackoverflow.com/questions/49491452/map-an-array-by-every-two-elements) - map an array by every 2 elements
+- [Stack Overflow](https://stackoverflow.com/questions/22952044/loop-through-json-in-ejs) - loop through json in ejs
+- [Stack Overflow](https://stackoverflow.com/questions/46821081/leaflet-throwing-uncaught-typeerror-cannot-read-property-lat-of-undefined-w) - leaflet lat undefined error
 - [Leaflet](https://leafletjs.com/reference.html) - instead of using setView()
-- [Stack Overflow](https://stackoverflow.com/questions/27186167/set-view-for-an-array-of-addressesno-coordinates-using-leaflet-js)
-- [DelftStack](https://www.delftstack.com/howto/mongodb/mongodb-find-multiple-conditions/#:~:text=Find%20Multiple%20Conditions%20Using%20the%20%24or%20Operator%20The,%28%29%2C%20update%20%28%29%2C%20etc.%2C%20as%20per%20the%20requirements.)
-- [Raddy.dev](https://raddy.dev/blog/query-mongodb-with-custom-url-parameters/)
-- [Stack Overflow](https://stackoverflow.com/questions/50836242/how-does-thenconsole-log-and-then-console-log-in-a-promise-chain)
-- [Stack Overflow](https://stackoverflow.com/questions/17303320/drawing-circle-with-radius-specified-in-meters-on-a-map)
-- [GitLab](https://gitlab.com/pragmaticreviews/node-mocha-chai)
-- [Stack Overflow](https://stackoverflow.com/questions/16607039/in-mocha-testing-while-calling-asynchronous-function-how-to-avoid-the-timeout-er)
-- [Semaphore](https://semaphoreci.com/community/tutorials/getting-started-with-node-js-and-mocha)
-- [Stack Overflow](https://stackoverflow.com/questions/59129597/mocha-async-test-is-timing-out)
-- [YouTube](https://www.youtube.com/watch?v=qd-Z6t_AL4w)
-- [Stack Overflow](https://stackoverflow.com/questions/42371649/test-rendering-views-with-ejs-in-mocha)
-- [Github](https://github.com/ravichandranjv/UnitTestingNodeJSRoute)
+- [Stack Overflow](https://stackoverflow.com/questions/27186167/set-view-for-an-array-of-addressesno-coordinates-using-leaflet-js) - set view for an array of address coordinates in leaflet
+- [DelftStack](https://www.delftstack.com/howto/mongodb/mongodb-find-multiple-conditions/#:~:text=Find%20Multiple%20Conditions%20Using%20the%20%24or%20Operator%20The,%28%29%2C%20update%20%28%29%2C%20etc.%2C%20as%20per%20the%20requirements.) - mongo find with multiple conditions
+- [Raddy.dev](https://raddy.dev/blog/query-mongodb-with-custom-url-parameters/) - mongo query with custom url parameters
+- [Stack Overflow](https://stackoverflow.com/questions/50836242/how-does-thenconsole-log-and-then-console-log-in-a-promise-chain) - promise chain
+- [Stack Overflow](https://stackoverflow.com/questions/17303320/drawing-circle-with-radius-specified-in-meters-on-a-map) - drawing circle with radius 
+- [GitLab](https://gitlab.com/pragmaticreviews/node-mocha-chai) - mocha chai
+- [Stack Overflow](https://stackoverflow.com/questions/16607039/in-mocha-testing-while-calling-asynchronous-function-how-to-avoid-the-timeout-er) - mocha & timeouts
+- [Semaphore](https://semaphoreci.com/community/tutorials/getting-started-with-node-js-and-mocha) - node & mocha
+- [Stack Overflow](https://stackoverflow.com/questions/59129597/mocha-async-test-is-timing-out) - mocha async is timing out
+- [YouTube](https://www.youtube.com/watch?v=qd-Z6t_AL4w) - API testing with chai http and mocha - JSON testing in JavaScript and NodeJS
+- [Stack Overflow](https://stackoverflow.com/questions/42371649/test-rendering-views-with-ejs-in-mocha) - test rendering views with ejs in mocha
+- [Github](https://github.com/ravichandranjv/UnitTestingNodeJSRoute) - unit testing nodejs route
 - [Github](https://github.com/bflaven/node-countries-mysql-crud-ejs) - used same method to test application
-- [Stack Overflow](https://stackoverflow.com/questions/28652080/how-to-result-the-contents-of-a-javascript-variable-using-cheerio-jquery-like-s)
+- [Stack Overflow](https://stackoverflow.com/questions/28652080/how-to-result-the-contents-of-a-javascript-variable-using-cheerio-jquery-like-s) - cheerio get js variable
